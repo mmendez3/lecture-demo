@@ -1,0 +1,55 @@
+
+body{
+    width: 80%;
+    margin: auto;
+    border: 2px dashed rgb(255,0,0,.75);
+    background-color: rgba(200,200,200,.35);
+}
+
+label{
+    border: 1px solid grey;
+    margin: 16px;
+    padding: .5em;
+    display: inline-block
+}
+
+
+/*Pseudo-Class and PSeudo-Elements Examples */
+label::first-letter{
+    font-weight: 900;
+}
+p::first-line{
+    color: #ff0000;
+    color: red;
+}
+
+label:hover{
+    background-color: red;
+}
+
+li::first-letter{
+    font-weight: 900;
+}
+
+/*Selectors-List Example
+p, ol, ul{
+    color: red;
+    background-color: black;
+}*/
+
+/*Descendant Selector Example
+p li { font-weight:900; }*/
+
+/*Child Combinator Example
+    - applies for the immediate child (Look at Lecture notes)
+div > a {color: red;}*/
+
+/*Adjacent Sibling Selector
+    - separated by '+' 
+    -applies for the immediate as well (look at lecture notes)
+span + strong{color: blue;}*/
+
+/*General Sibling Combinator
+    - separated by '+'
+    - applies to all (look at lecture notes)
+    span ~ strong {color: blue;}*/

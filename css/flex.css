@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+}
+
+.box-shadow-light{
+    border: 1px solid black;
+    box-shadow: 0 2px 2px #999999;
+}
+
+.box-shadow-dark{
+    border: 1px solid #eeeeee;
+    box-shadow: 0 2px 2px #888888;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.row {
+    height: 110px;
+    width: 100%;
+    padding: .15em;
+}
+div[class*=col-]{
+    border: 1px solid black;
+    height: 100px;
+    float: left;
+}
+.col-md-1 {
+    width: 8.33333%;
+    max-width: 8.33333%;
+    min-width: 30px;
+}
+.col-md-3 {
+    width: 25%;
+    max-width: 25%;
+    min-width: 150px;
+}
+.col-md-6 {
+    width: 50%;
+    max-width: 50%;
+    min-width: 300px;
+}
+.item {
+    padding: .25rem;
+    margin: 2px;
+    height: 100%;
+    border: 1px dashed blue;
+}
+
+
+.flex-row {
+    display: flex;
+
+    width: 500px;
+    height: 200px;
+
+    /* flex-wrap: wrap; */
+    flex-wrap: nowrap;
+
+    flex-flow: row;
+    /*flex-flow: row-reverse;
+
+    flex-flow: column;
+    flex-flow: column-reverse; */
+
+    /* justify-content: space-between;
+    justify-content: space-around; */
+    justify-content: center;
+    
+    align-items: center;
+}
+
+div[class*=flx-] {
+    height: 100px;
+    /* border: 1px solid black; */
+}
+
+.flx-md-1 {
+    flex: 0 0 0 8.33333%;
+     /* flex-basis: 8.33333%;
+    flex-grow: 0;
+    flex-shrink: 0; */
+    max-width: 8.33333%;
+    min-width: 30px;
+}
+
+.flx-md-3 {
+    flex: 0 0 25%;
+    /* flex-basis: 25%;
+    flex-grow: 0;
+    flex-shrink: 0; */
+    max-width: 25%;
+    min-width: 150px;
+}
+
+.flx-md-6 {
+    flex: 1 1 50%;
+    /* flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0; 
+    max-width: 50%;*/
+    min-width: 300px;
+}
+
+.flex-item {
+    height: 100px;
+    width: 100px;
+    flex-grow: 0;
+    /* flex-shrink: 100; */
+    order: 2;
+}
+
+.flex-item2 {
+    height: 100px;
+    width: 100px;
+    flex-grow: 0;
+    /* flex-shrink: 1; */
+    order: 3;
+}
+
+.flex-item3 {
+    order: 4;
+}
+
+.flex-item4 {
+    order: 1;
+}
